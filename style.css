@@ -663,3 +663,203 @@ body {
   }
 }
 
+/* === HERO APP-STYLE (MOBILE FIRST) === */
+
+.hero-app {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 0 3rem;
+  background: radial-gradient(circle at top, #111827 0, #020617 55%, #000 100%);
+}
+
+.hero-app-inner {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-app-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  line-height: 1.25;
+  margin-bottom: 0.7rem;
+}
+
+.hero-app-text p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.hero-chip {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  background: rgba(15, 23, 42, 0.85);
+  color: #fbbf24;
+  margin-bottom: 0.7rem;
+}
+
+.hero-app-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1rem 0 0.6rem;
+}
+
+.hero-app-langs {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* PHONE CARDS */
+
+.hero-app-phones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.phone-card {
+  position: relative;
+  width: 170px;
+  aspect-ratio: 9 / 16;
+  border-radius: 2rem;
+  overflow: hidden;
+  background: radial-gradient(circle at top, #1f2937, #020617);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
+  color: #f9fafb;
+  font-size: 0.8rem;
+}
+
+/* boleh ganti URL ini dengan foto Pinterest kamu */
+.phone-main {
+  background-image: linear-gradient(
+      180deg,
+      rgba(15, 23, 42, 0.1),
+      rgba(15, 23, 42, 0.9)
+    ),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80");
+  background-size: cover;
+  background-position: center;
+  padding: 1rem 1rem 1.1rem;
+}
+
+.phone-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-pill {
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(249, 250, 251, 0.6);
+  font-size: 0.7rem;
+}
+
+.phone-middle {
+  margin-top: 2.2rem;
+}
+
+.phone-middle h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.phone-middle p {
+  font-size: 0.8rem;
+  color: #e5e7eb;
+}
+
+.phone-bottom {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.small-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #e5e7eb;
+}
+
+.phone-bottom strong {
+  display: block;
+  font-size: 0.8rem;
+  margin: 0.15rem 0 0.45rem;
+}
+
+.phone-btn {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  border: none;
+  background: #0f172a;
+  color: #f9fafb;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.8);
+}
+
+/* phone kedua */
+
+.phone-secondary {
+  background-image: linear-gradient(
+      180deg,
+      rgba(15, 23, 42, 0.9),
+      rgba(15, 23, 42, 1)
+    ),
+    url("https://images.unsplash.com/photo-1519742845411-1e1b9f14f0dd?auto=format&fit=crop&w=800&q=80");
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  transform: translateY(10px) rotate(-4deg);
+  opacity: 0.95;
+}
+
+.phone-secondary-inner {
+  background: rgba(15, 23, 42, 0.92);
+  border-radius: 1.2rem;
+  padding: 0.7rem 0.75rem;
+}
+
+.phone-secondary-inner ul {
+  list-style: none;
+  margin-top: 0.3rem;
+}
+
+.phone-secondary-inner li {
+  font-size: 0.78rem;
+  margin-bottom: 0.25rem;
+}
+
+/* RESPONSIVE: di layar lebar, bagi 2 kolom */
+
+@media (min-width: 768px) {
+  .hero-app-inner {
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  }
+
+  .hero-app-text h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-app-phones {
+    justify-content: flex-end;
+  }
+
+  .phone-card {
+    width: 190px;
+  }
+
+  .phone-secondary {
+    transform: translateY(16px) rotate(-6deg);
+  }
+}
+
