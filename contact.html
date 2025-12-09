@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – Ella Digital Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark">E</div>
+        <div class="brand-text">
+          <span class="brand-name">Eshcol Digital Studio</span>
+          <span class="brand-sub">by Gabriella “Ella” Sapari</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Examples</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section" id="contact">
+    <div class="container contact-inner">
+      <div class="section-head left">
+        <h2>Let’s build your landing page</h2>
+        <p>
+          Tell me briefly who you are, what you need and your deadline.
+          I will reply with 1–2 ideas and a clear price.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Preferred contact</h3>
+          <ul class="card-list small">
+            <li>WhatsApp: <strong>+43&nbsp;xxx&nbsp;xxx&nbsp;xxxx</strong></li>
+            <li>Instagram: <strong>@your.instagram</strong></li>
+            <li>Email: <strong>you@mail.com</strong></li>
+          </ul>
+          <p class="contact-note">
+            Replace these with your real details before publishing.
+          </p>
+          <p class="about-text small" style="margin-top: 0.7rem;">
+            You can write in <strong>German, English or Bahasa Indonesia</strong>.
+          </p>
+        </div>
+
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="your@mail.com">
+          </div>
+          <div class="form-row">
+            <label for="type">Project type</label>
+            <select id="type">
+              <option>Personal brand landing page</option>
+              <option>Service / local business website</option>
+              <option>Digital product sales page</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Tell me about your project, deadline and budget range."></textarea>
+          </div>
+          <button class="btn btn-primary full-width" type="submit">Copy message template</button>
+          <p class="contact-small">
+            Later we can connect this button directly to WhatsApp or email.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Eshcol Digital Studio – Gabriella “Ella” Sapari.</p>
+      <p class="footer-sub">I’m happy to hear about your idea.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
