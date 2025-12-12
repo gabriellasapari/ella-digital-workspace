@@ -950,11 +950,15 @@ body {
 }
 
 /* card kedua: lebih dinamis, tidak “kosong” */
+/* card kedua: tetap pakai foto + overlay premium */
 .phone-secondary{
   border: 1px solid rgba(255,255,255,.10);
   background-image:
     radial-gradient(circle at top, rgba(251,191,36,.10), transparent 55%),
-    linear-gradient(180deg, rgba(15,23,42,.88), rgba(2,6,23,.95));
+    linear-gradient(180deg, rgba(15,23,42,.35), rgba(2,6,23,.92)),
+    url("assets/Hero4.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 .phone-secondary-inner{
   border: 1px solid rgba(255,255,255,.10);
