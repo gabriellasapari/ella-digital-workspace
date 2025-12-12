@@ -671,7 +671,16 @@ body {
   align-items: center;
   padding: 2.5rem 0 3rem;
   background:
-    linear-gradient(180deg, #020617 0%, #000 100%);
+    linear-gradient(
+      90deg,
+      rgba(2,6,23,0.95) 0%,
+      rgba(2,6,23,0.9) 48%,
+      rgba(2,6,23,0.6) 65%,
+      rgba(2,6,23,0.2) 100%
+    ),
+    url("assets/hero1.jpeg");
+  background-size: cover;
+  background-position: right center;
 }
 
 .hero-app-inner {
