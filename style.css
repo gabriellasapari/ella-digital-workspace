@@ -809,18 +809,14 @@ body {
 
 /* phone kedua */
 
-.phone-secondary {
-  background-image: linear-gradient(
-      180deg,
-      rgba(15, 23, 42, 0.9),
-      rgba(15, 23, 42, 1)
-    ),
-    url("https://images.unsplash.com/photo-1519742845411-1e1b9f14f0dd?auto=format&fit=crop&w=800&q=80");
+.phone-secondary{
+  border: 1px solid rgba(255,255,255,.10);
+  background-image:
+    radial-gradient(circle at top, rgba(251,191,36,.10), transparent 55%),
+    linear-gradient(180deg, rgba(15,23,42,.35), rgba(2,6,23,.92)),
+    url("assets/assetshero1.jpeg");
   background-size: cover;
   background-position: center;
-  padding: 1rem;
-  transform: translateY(10px) rotate(-4deg);
-  opacity: 0.95;
 }
 
 .phone-secondary-inner {
