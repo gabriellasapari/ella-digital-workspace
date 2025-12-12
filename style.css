@@ -671,16 +671,22 @@ body {
   align-items: center;
   padding: 2.5rem 0 3rem;
   background:
-    linear-gradient(
-      90deg,
-      rgba(2,6,23,0.95) 0%,
-      rgba(2,6,23,0.9) 48%,
-      rgba(2,6,23,0.6) 65%,
-      rgba(2,6,23,0.2) 100%
+    radial-gradient(
+      1200px 600px at 15% 10%,
+      rgba(251,191,36,0.10),
+      transparent 60%
     ),
-    url("assets/hero1.jpeg");
-  background-size: cover;
-  background-position: right center;
+    radial-gradient(
+      900px 500px at 85% 20%,
+      rgba(59,130,246,0.08),
+      transparent 55%
+    ),
+    linear-gradient(
+      180deg,
+      #020617 0%,
+      #020617 55%,
+      #000000 100%
+    );
 }
 
 .hero-app-inner {
