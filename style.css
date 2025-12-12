@@ -1025,3 +1025,48 @@ body {
   background-position: right center !important;
   background-repeat: no-repeat !important;
 }
+
+/* ===== HEADER COLOR TUNING (ELEGANT / PREMIUM) ===== */
+
+/* Header background lebih soft */
+.site-header{
+  background: linear-gradient(
+    to bottom,
+    rgba(2,6,23,0.75),
+    rgba(2,6,23,0.55)
+  );
+  backdrop-filter: blur(18px);
+}
+
+/* Brand name */
+.brand-name{
+  color: #f1f5f9;           /* soft white */
+  letter-spacing: 0.08em;
+}
+
+/* Brand sub text */
+.brand-sub{
+  color: rgba(203,213,225,0.75);  /* elegant grey */
+}
+
+/* Navigation links */
+.nav-list a{
+  color: rgba(203,213,225,0.75);
+}
+
+.nav-list a:hover{
+  color: #f8fafc;
+  background: rgba(255,255,255,0.06);
+}
+
+/* Logo bulat (E) biar lebih calm */
+.brand-mark{
+  background: linear-gradient(
+    135deg,
+    #e5e7eb,
+    #9ca3af
+  );
+  color: #020617;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+}
+
